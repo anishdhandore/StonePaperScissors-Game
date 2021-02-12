@@ -48,12 +48,12 @@ while run:
         print("Enter only rock/paper/scissor?")
         play_again = input("Do you want to play again, yes or no? ")
 
-        if play_again.lower() == "yes":
-            continue
+        # if player says no, then we say the loop is false
+        if play_again.lower() == "no":
+            run = False
+        
+        # if  yes, then we skip step by using continue
         else:
-            break
+            continue
     
-        
-
-        
-
+       
